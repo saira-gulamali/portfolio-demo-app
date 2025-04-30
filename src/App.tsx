@@ -68,11 +68,13 @@ import { demoItems } from "./data/demoItems";
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl text-blue-500 text-center mt-4">My React App</h1>
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center">
+      <h1 className="text-4xl text-blue-900 text-center mt-4 font-bold">
+        React Features Playground
+      </h1>
       <main className="flex flex-col items-center justify-center p-6">
-        <h2 className="text-2xl text-blue-400 mb-2">Welcome to my app!</h2>
-        <p className="text-lg text-blue-300">Explore React features.</p>
+        <h2 className="text-2xl text-blue-800 mb-2">Welcome to my app!</h2>
+        <p className="text-lg text-stone-700">Explore React features.</p>
 
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 mt-6 w-full max-w-6xl">
           {demoItems.map((item) => (
@@ -80,7 +82,7 @@ function App() {
           ))}
         </div>
       </main>
-    </>
+    </div>
   );
 }
 
